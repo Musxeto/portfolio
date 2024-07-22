@@ -14,501 +14,504 @@ import islandScene from '../assets/3d/island.glb';
 import {a} from '@react-spring/three'
 
 const Island = (props) => {
-  const islandRef = useRef()
-  const { nodes, materials } = useGLTF(islandScene);
+  const islandRef = useRef();
+  const { nodes, materials } = useGLTF(islandScene); 
   console.log(nodes, materials);
 
   return (
     <a.group ref={islandRef} {...props}>
-      <mesh
-        geometry={nodes.Object_4.geometry}
-        material={materials.Pano_Light}
-      />
-      <mesh   geometry={nodes.Object_5.geometry} material={materials.Pano} />
-      <mesh
-        geometry={nodes.Object_6.geometry}
-        material={materials.Fundo}
+<mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Casa001.geometry}
+        material={materials['Madeira Dark']}
       />
       <mesh
-        geometry={nodes.Object_8.geometry}
-        material={materials.Madeira}
+        castShadow
+        receiveShadow
+        geometry={nodes.Madeiras.geometry}
+        material={materials['Madeira Dark']}
       />
       <mesh
-        geometry={nodes.Object_9.geometry}
-        material={materials.Fundo}
+        castShadow
+        receiveShadow
+        geometry={nodes.Madeiras001.geometry}
+        material={materials['Madeira Dark']}
       />
       <mesh
-        
-        
-        geometry={nodes.Object_10.geometry}
+        castShadow
+        receiveShadow
+        geometry={nodes.Madeiras002.geometry}
+        material={materials['Madeira Dark']}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Arvore_2006.geometry}
+        material={materials['Grama Light']}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Arvore_2007.geometry}
+        material={materials['Grama Light']}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Arvore_2008.geometry}
+        material={materials['Grama Light']}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Tijolos.geometry}
+        material={materials['Concreto Dark']}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Arvore_1009.geometry}
+        material={materials['Grama Light']}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Arvore_1010.geometry}
+        material={materials['Grama Light']}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Madeiras003.geometry}
+        material={materials['Madeira Dark']}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Tijolos001.geometry}
+        material={materials['Concreto Dark']}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Arvore_1011.geometry}
+        material={materials['Grama Light']}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Arvore_1012.geometry}
+        material={materials['Grama Light']}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Arvore_1013.geometry}
+        material={materials['Grama Light']}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Arvore_1014.geometry}
+        material={materials['Grama Light']}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Arvore_1015.geometry}
+        material={materials['Grama Light']}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Arvore_1016.geometry}
+        material={materials['Grama Light']}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Arvore_1017.geometry}
+        material={materials['Grama Light']}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Arvore_1018.geometry}
+        material={materials['Grama Light']}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Arvore_1019.geometry}
+        material={materials['Grama Light']}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Arvore_1020.geometry}
+        material={materials['Grama Light']}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Arvore_1021.geometry}
+        material={materials['Grama Light']}
+      />
+      <mesh castShadow receiveShadow geometry={nodes.Barco.geometry} material={materials.Madeira} />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube048.geometry}
+        material={materials['Pano Light']}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube048_1.geometry}
         material={materials.Pano}
       />
       <mesh
-        
-        
-        geometry={nodes.Object_11.geometry}
-        material={materials.Madeira_Dark}
-      />
-      <mesh
-        
-        
-        geometry={nodes.Object_13.geometry}
-        material={materials.Madeira}
-      />
-      <mesh
-        
-        
-        geometry={nodes.Object_14.geometry}
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube048_2.geometry}
         material={materials.Fundo}
       />
       <mesh
-        
-        
-        geometry={nodes.Object_15.geometry}
-        material={materials.Madeira_Dark}
+        castShadow
+        receiveShadow
+        geometry={nodes.Sphere001.geometry}
+        material={materials.Madeira}
       />
       <mesh
-        
-        
-        geometry={nodes.Object_16.geometry}
-        material={materials.Vidro}
+        castShadow
+        receiveShadow
+        geometry={nodes.Sphere001_1.geometry}
+        material={materials.Fundo}
       />
       <mesh
-        
-        
-        geometry={nodes.Object_18.geometry}
-        material={materials.Grama_Light}
-      />
-      <mesh
-        
-        
-        geometry={nodes.Object_19.geometry}
-        material={materials.Madeira_Dark}
-      />
-      <mesh
-        
-        
-        geometry={nodes.Object_21.geometry}
-        material={materials.Madeira_Dark}
-      />
-      <mesh
-        
-        
-        geometry={nodes.Object_22.geometry}
-        material={materials.Grama_Light}
-      />
-      <mesh
-        
-        
-        geometry={nodes.Object_24.geometry}
-        material={materials.Concreto}
-      />
-      <mesh
-        
-        
-        geometry={nodes.Object_25.geometry}
+        castShadow
+        receiveShadow
+        geometry={nodes.Sphere001_2.geometry}
         material={materials.Pano}
       />
       <mesh
-        
-        
-        geometry={nodes.Object_26.geometry}
-        material={materials.Concreto_Dark}
+        castShadow
+        receiveShadow
+        geometry={nodes.Sphere001_3.geometry}
+        material={materials['Madeira Dark']}
       />
       <mesh
-        
-        
-        geometry={nodes.Object_27.geometry}
-        material={materials.Pano_Light}
-      />
-      <mesh
-        
-        
-        geometry={nodes.Object_28.geometry}
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube004.geometry}
         material={materials.Madeira}
       />
       <mesh
-        
-        
-        geometry={nodes.Object_29.geometry}
-        material={materials.Madeira_Dark}
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube004_1.geometry}
+        material={materials.Fundo}
       />
       <mesh
-        
-        
-        geometry={nodes.Object_30.geometry}
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube004_2.geometry}
+        material={materials['Madeira Dark']}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube004_3.geometry}
         material={materials.Vidro}
       />
       <mesh
-        
-        
-        geometry={nodes.Object_31.geometry}
-        material={materials.Fundo}
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube006.geometry}
+        material={materials['Grama Light']}
       />
       <mesh
-        
-        
-        geometry={nodes.Object_33.geometry}
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube006_1.geometry}
+        material={materials['Madeira Dark']}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube007.geometry}
+        material={materials['Madeira Dark']}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube007_1.geometry}
+        material={materials['Grama Light']}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube001.geometry}
         material={materials.Concreto}
       />
       <mesh
-        
-        
-        geometry={nodes.Object_34.geometry}
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube001_1.geometry}
+        material={materials.Pano}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube001_2.geometry}
+        material={materials['Concreto Dark']}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube001_3.geometry}
+        material={materials['Pano Light']}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube001_4.geometry}
         material={materials.Madeira}
       />
       <mesh
-        
-        
-        geometry={nodes.Object_35.geometry}
-        material={materials.Madeira_Dark}
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube001_5.geometry}
+        material={materials['Madeira Dark']}
       />
       <mesh
-        
-        
-        geometry={nodes.Object_36.geometry}
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube001_6.geometry}
+        material={materials.Vidro}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube001_7.geometry}
         material={materials.Fundo}
       />
       <mesh
-        
-        
-        geometry={nodes.Object_38.geometry}
-        material={materials.Madeira_Dark}
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube008.geometry}
+        material={materials.Concreto}
       />
       <mesh
-        
-        
-        geometry={nodes.Object_39.geometry}
-        material={materials.Grama_Light}
-      />
-      <mesh
-        
-        
-        geometry={nodes.Object_41.geometry}
-        material={materials.Grama_Light}
-      />
-      <mesh
-        
-        
-        geometry={nodes.Object_42.geometry}
-        material={materials.Madeira_Dark}
-      />
-      <mesh
-        
-        
-        geometry={nodes.Object_44.geometry}
-        material={materials.Madeira_Dark}
-      />
-      <mesh
-        
-        
-        geometry={nodes.Object_45.geometry}
-        material={materials.Grama_Light}
-      />
-      <mesh
-        
-        
-        geometry={nodes.Object_47.geometry}
-        material={materials.Grama_Light}
-      />
-      <mesh
-        
-        
-        geometry={nodes.Object_48.geometry}
-        material={materials.Madeira_Dark}
-      />
-      <mesh
-        
-        
-        geometry={nodes.Object_50.geometry}
-        material={materials.Grama_Light}
-      />
-      <mesh
-        
-        
-        geometry={nodes.Object_51.geometry}
-        material={materials.Madeira_Dark}
-      />
-      <mesh
-        
-        
-        geometry={nodes.Object_53.geometry}
-        material={materials.Madeira_Dark}
-      />
-      <mesh
-        
-        
-        geometry={nodes.Object_54.geometry}
-        material={materials.Grama_Light}
-      />
-      <mesh
-        
-        
-        geometry={nodes.Object_56.geometry}
-        material={materials.Madeira_Dark}
-      />
-      <mesh
-        
-        
-        geometry={nodes.Object_57.geometry}
-        material={materials.Grama_Light}
-      />
-      <mesh
-        
-        
-        geometry={nodes.Object_59.geometry}
-        material={materials.Grama_Light}
-      />
-      <mesh
-        
-        
-        geometry={nodes.Object_60.geometry}
-        material={materials.Madeira_Dark}
-      />
-      <mesh
-        
-        
-        geometry={nodes.Object_62.geometry}
-        material={materials.Madeira_Dark}
-      />
-      <mesh
-        
-        
-        geometry={nodes.Object_64.geometry}
-        material={materials.Madeira_Dark}
-      />
-      <mesh
-        
-        
-        geometry={nodes.Object_66.geometry}
-        material={materials.Madeira_Dark}
-      />
-      <mesh
-        
-        
-        geometry={nodes.Object_68.geometry}
-        material={materials.Madeira_Dark}
-      />
-      <mesh
-        
-        
-        geometry={nodes.Object_69.geometry}
-        material={materials.Grama_Light}
-      />
-      <mesh
-        
-        
-        geometry={nodes.Object_71.geometry}
-        material={materials.Madeira_Dark}
-      />
-      <mesh
-        
-        
-        geometry={nodes.Object_73.geometry}
-        material={materials.Grama_Light}
-      />
-      <mesh
-        
-        
-        geometry={nodes.Object_75.geometry}
-        material={materials.Grama_Light}
-      />
-      <mesh
-        
-        
-        geometry={nodes.Object_77.geometry}
-        material={materials.Grama_Light}
-      />
-      <mesh
-        
-        
-        geometry={nodes.Object_79.geometry}
-        material={materials.Concreto_Dark}
-      />
-      <mesh
-        
-        
-        geometry={nodes.Object_81.geometry}
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube008_1.geometry}
         material={materials.Madeira}
       />
       <mesh
-        
-        
-        geometry={nodes.Object_82.geometry}
-        material={materials.Madeira_Dark}
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube008_2.geometry}
+        material={materials['Madeira Dark']}
       />
       <mesh
-        
-        
-        geometry={nodes.Object_84.geometry}
-        material={materials.Madeira_Dark}
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube008_3.geometry}
+        material={materials.Fundo}
       />
       <mesh
-        
-        
-        geometry={nodes.Object_85.geometry}
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube002.geometry}
+        material={materials['Madeira Dark']}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube002_1.geometry}
+        material={materials['Grama Light']}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube005.geometry}
+        material={materials['Grama Light']}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube005_1.geometry}
+        material={materials['Madeira Dark']}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube009.geometry}
+        material={materials['Madeira Dark']}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube009_1.geometry}
+        material={materials['Grama Light']}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube010.geometry}
+        material={materials['Grama Light']}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube010_1.geometry}
+        material={materials['Madeira Dark']}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube011.geometry}
+        material={materials['Grama Light']}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube011_1.geometry}
+        material={materials['Madeira Dark']}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube012.geometry}
+        material={materials['Madeira Dark']}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube012_1.geometry}
+        material={materials['Grama Light']}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube013.geometry}
+        material={materials['Madeira Dark']}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube013_1.geometry}
+        material={materials['Grama Light']}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube014.geometry}
+        material={materials['Grama Light']}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube014_1.geometry}
+        material={materials['Madeira Dark']}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube018.geometry}
+        material={materials['Madeira Dark']}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube018_1.geometry}
+        material={materials['Grama Light']}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube023.geometry}
         material={materials.Madeira}
       />
       <mesh
-        
-        
-        geometry={nodes.Object_87.geometry}
-        material={materials.Madeira_Dark}
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube023_1.geometry}
+        material={materials['Madeira Dark']}
       />
       <mesh
-        
-        
-        geometry={nodes.Object_88.geometry}
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube024.geometry}
+        material={materials['Madeira Dark']}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube024_1.geometry}
         material={materials.Madeira}
       />
       <mesh
-        
-        
-        geometry={nodes.Object_90.geometry}
-        material={materials.Madeira_Dark}
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube026.geometry}
+        material={materials['Madeira Dark']}
       />
       <mesh
-        
-        
-        geometry={nodes.Object_91.geometry}
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube026_1.geometry}
         material={materials.Madeira}
       />
       <mesh
-        
-        
-        geometry={nodes.Object_93.geometry}
-        material={materials.Madeira_Dark}
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube027.geometry}
+        material={materials['Madeira Dark']}
       />
       <mesh
-        
-        
-        geometry={nodes.Object_94.geometry}
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube027_1.geometry}
         material={materials.Madeira}
       />
       <mesh
-        
-        
-        geometry={nodes.Object_96.geometry}
-        material={materials.Grama_Light}
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube028.geometry}
+        material={materials['Madeira Dark']}
       />
       <mesh
-        
-        
-        geometry={nodes.Object_98.geometry}
-        material={materials.Grama_Light}
-      />
-      <mesh
-        
-        
-        geometry={nodes.Object_100.geometry}
-        material={materials.Madeira_Dark}
-      />
-      <mesh
-        
-        
-        geometry={nodes.Object_102.geometry}
-        material={materials.Concreto_Dark}
-      />
-      <mesh
-        
-        
-        geometry={nodes.Object_104.geometry}
-        material={materials.Grama_Light}
-      />
-      <mesh
-        
-        
-        geometry={nodes.Object_106.geometry}
-        material={materials.Grama_Light}
-      />
-      <mesh
-        
-        
-        geometry={nodes.Object_108.geometry}
-        material={materials.Grama_Light}
-      />
-      <mesh
-        
-        
-        geometry={nodes.Object_110.geometry}
-        material={materials.Grama_Light}
-      />
-      <mesh
-        
-        
-        geometry={nodes.Object_112.geometry}
-        material={materials.Madeira_Dark}
-      />
-      <mesh
-        
-        
-        geometry={nodes.Object_113.geometry}
-        material={materials.Grama_Light}
-      />
-      <mesh
-        
-        
-        geometry={nodes.Object_115.geometry}
-        material={materials.Grama_Light}
-      />
-      <mesh
-        
-        
-        geometry={nodes.Object_117.geometry}
-        material={materials.Grama_Light}
-      />
-      <mesh
-        
-        
-        geometry={nodes.Object_119.geometry}
-        material={materials.Grama_Light}
-      />
-      <mesh
-        
-        
-        geometry={nodes.Object_121.geometry}
-        material={materials.Grama_Light}
-      />
-      <mesh
-        
-        
-        geometry={nodes.Object_123.geometry}
-        material={materials.Grama_Light}
-      />
-      <mesh
-        
-        
-        geometry={nodes.Object_125.geometry}
-        material={materials.Grama_Light}
-      />
-      <mesh
-        
-        
-        geometry={nodes.Object_127.geometry}
-        material={materials.Grama_Light}
-      />
-      <mesh
-        
-        
-        geometry={nodes.Object_129.geometry}
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube028_1.geometry}
         material={materials.Madeira}
       />
       <mesh
-        
-        
-        geometry={nodes.Object_131.geometry}
-        material={materials.Terra}
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube037.geometry}
+        material={materials['Madeira Dark']}
       />
       <mesh
-        
-        
-        geometry={nodes.Object_132.geometry}
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube037_1.geometry}
+        material={materials['Grama Light']}
+      />
+      <mesh castShadow receiveShadow geometry={nodes.Cube003.geometry} material={materials.Terra} />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube003_1.geometry}
         material={materials.Grama}
       />
       <mesh
-        
-        
-        geometry={nodes.Object_133.geometry}
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube003_2.geometry}
         material={materials.Areia}
       />
     </a.group>
